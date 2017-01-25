@@ -10,4 +10,8 @@ var Square = function(type) {
 //assigns prototype of Square to it's proper constructor
 
 
+Square.prototype = Object.create(Shape.prototype);
+//reassign constructor to its original constructor
+Square.prototype.constructor = Square;
+
 module.exports = Square;
